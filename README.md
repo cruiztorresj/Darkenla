@@ -4,7 +4,13 @@ Dark theme for websites.
 Right now this is an extension for the Vivaldi Web Browser, although it should be possible to install it on Chrome with little to none modifications in the installation process.
 
 ## Installation.
+* Clone this repository, it will create the `Darkenla` directory in your computer.
+* Visit `vivaldi://extensions` on a new tab of your Vivaldi Web Browser.
+* Enable `Developer mode` by switching the related button located on the top right corner.
+* Click `Load unpacked`.
+* Click on the `Darkenla` directory you just have cloned, and click the `Select Folder` button in the modal dialog you are currently interacting.
 
+The above steps will enable the Darkenla extension and even pin the Darkela button next to your URL address bar.
 
 ## Background and technical.
 I built this web extension for my own use, so it is easy for the eyes while reading documentation for example. At present time not all the HTML elements are there to be styled, I remember styling only the `body` at the beginning and style more HTML elements as needed. At some point I got tired of copy-pasting the JavaScript code into the web developer console and I decided to go on creating this web browser extension.
