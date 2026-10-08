@@ -8,10 +8,11 @@ chrome.action.onClicked.addListener(async (tab) => {
 
 function darkenla() {
 
+    const BLACK = 'black';
+
     function style(element, bgcolor, color) {
 
       const BG_COLOR_PROP = 'background-color';
-      const BLACK = 'black';
 
       Array.from(document.getElementsByTagName(element))
         .forEach(
