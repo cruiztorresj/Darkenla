@@ -10,25 +10,27 @@ function darkenla() {
 
     function style(element, bgcolor, color) {
 
-      const BG_COLOR = 'background-color';
+      const BG_COLOR_PROP = 'background-color';
+      const BLACK = 'black';
 
       Array.from(document.getElementsByTagName(element))
         .forEach(
             (item) => item.setAttribute(
                             'style',
                             bgcolor ?
-                                `${BG_COLOR}: ${bgcolor}; color: ${color}`
+                                `${BG_COLOR_PROP}: ${bgcolor}; color: ${color}`
                                 : `color: ${color}`));
     }
 
-    const elements = ['span', 'caption', 'h1', 'h2', 'h3', 'h4',
-                        'h5', 'h6', 'code', 'td', 'th', 'div', 'section',
-                        'main', 'p', 'article', 'nav', 'aside', 'label',
-                        'footer'];
+    const elements = ['article', 'aside', 'caption', 'code', 'div', 'footer',
+                        'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'label', 'li',
+                        'main', 'nav', 'ol', 'p', 'section', 'span', 'td',
+                        'th', 'ul'];
 
-    elements.forEach((element) => style(element, 'black', 'white'));
+    elements.forEach((element) => style(element, BLACK, 'white'));
 
+    style('strong', BLACK, 'honeydew');
     style('pre', 'darkslategrey', 'white');
-    style('body', 'black', 'cornsilk');
+    style('body', BLACK, 'cornsilk');
     style('a', undefined, 'aqua');
 }
