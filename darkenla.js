@@ -23,15 +23,16 @@ function darkenla() {
                                 : `color: ${color}`));
     }
 
-    const elements = ['article', 'aside', 'caption', 'code', 'div', 'footer',
-                        'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'label', 'li',
-                        'main', 'nav', 'ol', 'p', 'section', 'span', 'td',
-                        'th', 'ul'];
+    style('body', BLACK, 'cornsilk');
+
+    const elements = ['article', 'aside', 'blockquote', 'caption', 'code',
+                        'div', 'footer', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+                        'label', 'li', 'main', 'nav', 'ol', 'p', 'section',
+                        'span', 'td', 'th', 'ul'];
 
     elements.forEach((element) => style(element, BLACK, 'white'));
 
     style('strong', BLACK, 'honeydew');
     style('pre', 'darkslategrey', 'white');
-    style('body', BLACK, 'cornsilk');
     style('a', undefined, 'aqua');
 }
