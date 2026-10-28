@@ -26,9 +26,9 @@ function darkenla() {
     style('body', BLACK, 'cornsilk');
 
     const elements = ['article', 'aside', 'blockquote', 'caption', 'code',
-                        'div', 'footer', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-                        'label', 'li', 'main', 'nav', 'ol', 'p', 'section',
-                        'span', 'td', 'th', 'ul'];
+                        'div', 'dt', 'footer', 'h1', 'h2', 'h3', 'h4', 'h5',
+                        'h6', 'header', 'label', 'li', 'main', 'nav', 'ol',
+                        'p', 'section', 'span', 'td', 'th', 'ul'];
 
     elements.forEach((element) => style(element, BLACK, 'white'));
 
