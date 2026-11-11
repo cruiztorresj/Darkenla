@@ -1,11 +1,3 @@
-chrome.action.onClicked.addListener(async (tab) => {
-
-	await chrome.scripting.executeScript({
-		func: darkenla,
-		target: { tabId: tab.id }
-	});
-});
-
 function darkenla() {
 
     const BLACK = 'black';
@@ -36,3 +28,5 @@ function darkenla() {
     style('pre', 'darkslategrey', 'white');
     style('a', undefined, 'aqua');
 }
+
+darkenla();

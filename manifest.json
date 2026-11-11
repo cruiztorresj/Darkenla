@@ -10,8 +10,14 @@
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.wildfly.org/*"],
+      "js": ["darkenla.js"]
+    }
+  ],
   "background": {
-    "service_worker": "darkenla.js"
+    "service_worker": "darkenlaer.js"
   },
   "action": {
     "default_icon": {
